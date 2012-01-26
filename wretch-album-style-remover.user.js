@@ -20,6 +20,11 @@
 
     // Id
 
+    obj = document.getElementById('ad_banner');
+    if (obj) {
+        obj.parentElement.removeChild(obj);
+    }
+
     obj = document.getElementById('footer-switch');
     if (obj) {
         obj.parentElement.removeChild(obj);
