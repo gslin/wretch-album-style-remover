@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wretch Album Style Remover
-// @version     2011.1125.03
+// @version     20120126.0
 // @namespace   http://blog.gslin.org/plugins/wretch-album-style-remover
 // @description Remove wretch album style
 // @homepage    http://blog.gslin.org/plugins/wretch-album-style-remover
@@ -28,4 +28,8 @@
         obj.parent.removeChild(obj);
     }
 
+    obj = document.getElementById('footer-switch');
+    if (obj) {
+        obj.parent.removeChild(obj);
+    }
 })();
