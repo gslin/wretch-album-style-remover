@@ -33,8 +33,23 @@
         obj.parentElement.removeChild(obj);
     }
 
+    obj = document.getElementById('ad_square');
+    if (obj) {
+        obj.parentElement.removeChild(obj);
+    }
+
     obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
         obj[0].parentElement.removeChild(obj[0]);
+    }
+
+    obj = document.getElementsByClassName('hidden');
+    for (var i = 0; i < obj.length; i++) {
+        obj[i].parentElement.removeChild(obj[i]);
+    }
+
+    obj = document.getElementById('rapid_album');
+    if (obj) {
+        obj.parentElement.parentElement.removeChild(obj.parentElement);
     }
 })();
