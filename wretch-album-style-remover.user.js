@@ -35,6 +35,6 @@
 
     obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
-        obj.parentElement.removeChild(obj);
+        obj[0].parentElement.removeChild(obj);
     }
 })();
