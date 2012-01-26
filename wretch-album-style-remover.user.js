@@ -40,20 +40,20 @@
         obj.parentElement.removeChild(obj);
     }
 
-    // Class
-
-    obj = document.getElementsByClassName('social-wrapper');
+    obj = document.getElementById('rapid_album');
     if (obj) {
-        obj[0].parentElement.removeChild(obj[0]);
+        obj.parentElement.parentElement.removeChild(obj.parentElement);
     }
+
+    // Class
 
     obj = document.getElementsByClassName('hidden');
     for (var i = 0; i < obj.length; i++) {
         obj[i].parentElement.removeChild(obj[i]);
     }
 
-    obj = document.getElementById('rapid_album');
+    obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
-        obj.parentElement.parentElement.removeChild(obj.parentElement);
+        obj[0].parentElement.removeChild(obj[0]);
     }
 })();
