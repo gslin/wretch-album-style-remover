@@ -18,9 +18,14 @@
         obj[i].style.cssText = '';
     }
 
-    var kukubar_upper = document.getElementById('kukubar-upper');
-    kukubar_upper.style.display = 'none';
+    var obj = document.getElementById('kukubar-upper');
+    if (obj) {
+        obj.parent.removeChild(obj);
+    }
 
-    var kukubar_lower = document.getElementById('kukubar-lower');
-    kukubar_lower.style.display = 'none';
+    obj = document.getElementById('kukubar-lower');
+    if (obj) {
+        obj.parent.removeChild(obj);
+    }
+
 })();
