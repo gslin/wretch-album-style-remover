@@ -20,16 +20,16 @@
 
     var obj = document.getElementById('kukubar-upper');
     if (obj) {
-        obj.parent.removeChild(obj);
+        obj.parentElement.removeChild(obj);
     }
 
     obj = document.getElementById('kukubar-lower');
     if (obj) {
-        obj.parent.removeChild(obj);
+        obj.parentElement.removeChild(obj);
     }
 
     obj = document.getElementById('footer-switch');
     if (obj) {
-        obj.parent.removeChild(obj);
+        obj.parentElement.removeChild(obj);
     }
 })();
