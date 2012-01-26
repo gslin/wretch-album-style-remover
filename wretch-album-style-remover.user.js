@@ -33,7 +33,7 @@
         obj.parentElement.removeChild(obj);
     }
 
-    obj = document.getElementByClassName('social-wrapper');
+    obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
         obj.parentElement.removeChild(obj);
     }
