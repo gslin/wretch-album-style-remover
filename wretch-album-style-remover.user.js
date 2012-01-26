@@ -18,6 +18,8 @@
         obj[i].style.cssText = '';
     }
 
+    // Id
+
     obj = document.getElementById('footer-switch');
     if (obj) {
         obj.parentElement.removeChild(obj);
@@ -32,6 +34,8 @@
     if (obj) {
         obj.parentElement.removeChild(obj);
     }
+
+    // Class
 
     obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
