@@ -33,11 +33,6 @@
         obj.parentElement.removeChild(obj);
     }
 
-    obj = document.getElementById('ad_square');
-    if (obj) {
-        obj.parentElement.removeChild(obj);
-    }
-
     obj = document.getElementsByClassName('social-wrapper');
     if (obj) {
         obj[0].parentElement.removeChild(obj[0]);
