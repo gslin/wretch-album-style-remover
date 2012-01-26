@@ -18,7 +18,7 @@
         obj[i].style.cssText = '';
     }
 
-    var obj = document.getElementById('kukubar-upper');
+    obj = document.getElementById('footer-switch');
     if (obj) {
         obj.parentElement.removeChild(obj);
     }
@@ -28,7 +28,7 @@
         obj.parentElement.removeChild(obj);
     }
 
-    obj = document.getElementById('footer-switch');
+    var obj = document.getElementById('kukubar-upper');
     if (obj) {
         obj.parentElement.removeChild(obj);
     }
