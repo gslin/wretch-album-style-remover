@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wretch Album Style Remover
-// @version     20120126.3
+// @version     20120318.0
 // @namespace   http://blog.gslin.org/plugins/wretch-album-style-remover
 // @description Remove wretch album style
 // @homepage    http://blog.gslin.org/plugins/wretch-album-style-remover
@@ -36,6 +36,11 @@
     }
 
     var obj = document.getElementById('kukubar-upper');
+    if (obj) {
+        obj.parentElement.removeChild(obj);
+    }
+
+    obj = document.getElementById('photowall');
     if (obj) {
         obj.parentElement.removeChild(obj);
     }
